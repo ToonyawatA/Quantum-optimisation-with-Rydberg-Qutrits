@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.13)  11 MAY 2024 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.3)  18 MAY 2024 18:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -74,10 +74,9 @@ File: aps4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentatio
 n)
 Class revtex4-2 Info: RevTeX society APS selected on input line 40.
 )
-
-Class revtex4-2 Warning: No journal specified, using default pra.
-
+Class revtex4-2 Info: Selecting journal pra on input line 7660.
 Class revtex4-2 Info: APS journal PRA selected on input line 7661.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
 File: aps10pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for document
 ation)
@@ -647,7 +646,11 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count312
 \l__pdf_internal_box=\box86
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `fig:case1_ultimate' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -664,8 +667,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
-
-(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count313
 \scratchdimen=\dimen270
@@ -701,36 +703,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-Package natbib Warning: Citation `Saffman2010QuantumAtoms' on page 1 undefined 
-on input line 77.
-
-
-Package natbib Warning: Citation `Bernien2017ProbingSimulator' on page 1 undefi
-ned on input line 77.
-
-
-Package natbib Warning: Citation `Keesling2019QuantumSimulator' on page 1 undef
-ined on input line 77.
-
-
-Package natbib Warning: Citation `Saffman2010QuantumAtoms' on page 1 undefined 
-on input line 83.
-
-
-Package natbib Warning: Citation `Saffman2010QuantumAtoms' on page 1 undefined 
-on input line 83.
-
-
-Package natbib Warning: Citation `Browaeys2020Many-bodyAtoms' on page 1 undefin
-ed on input line 83.
-
 <picture/many-qutrit.png, id=4, 1071.00125pt x 663.47874pt>
 File: picture/many-qutrit.png Graphic file (type png)
 <use picture/many-qutrit.png>
 Package pdftex.def Info: picture/many-qutrit.png  used on input line 86.
 (pdftex.def)             Requested size: 221.93158pt x 137.48198pt.
-[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 1852) in paragraph at lines 91--92
 []\OT1/cmr/m/it/10 Rydberg-atom qutrit Hamil-to-nian.\OT1/cmr/m/n/10 --- As sho
 wn in
@@ -741,145 +719,205 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
-<picture/Blockade_Mech.png, id=23, 1048.91875pt x 968.61874pt>
+<picture/Blockade_Mech.png, id=22, 1048.91875pt x 968.61874pt>
 File: picture/Blockade_Mech.png Graphic file (type png)
 <use picture/Blockade_Mech.png>
-Package pdftex.def Info: picture/Blockade_Mech.png  used on input line 106.
+Package pdftex.def Info: picture/Blockade_Mech.png  used on input line 104.
 (pdftex.def)             Requested size: 241.84842pt x 223.32448pt.
-<picture/color_matching.png, id=24, 1732.4725pt x 895.345pt>
-File: picture/color_matching.png Graphic file (type png)
-<use picture/color_matching.png>
-Package pdftex.def Info: picture/color_matching.png  used on input line 117.
-(pdftex.def)             Requested size: 241.84842pt x 124.97858pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--108
+
+ []
+
 [2 <./picture/many-qutrit.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 121.
+Package natbib Warning: Citation `Hikihara2011ConnectingDeformation' on page 3 
+undefined on input line 109.
+
+<picture/Z2_Z3.png, id=34, 1470.49374pt x 1073.00874pt>
+File: picture/Z2_Z3.png Graphic file (type png)
+<use picture/Z2_Z3.png>
+Package pdftex.def Info: picture/Z2_Z3.png  used on input line 112.
+(pdftex.def)             Requested size: 227.62204pt x 166.08542pt.
+
+Underfull \hbox (badness 1655) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 In these phases, the Ry-d-berg atoms are ar-ranged
+ []
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 121.
+Underfull \hbox (badness 10000) in paragraph at lines 109--116
+
+ []
+
+<picture/successive_driving.png, id=35, 1878.01625pt x 984.67876pt>
+File: picture/successive_driving.png Graphic file (type png)
+<use picture/successive_driving.png>
+Package pdftex.def Info: picture/successive_driving.png  used on input line 121
+.
+(pdftex.def)             Requested size: 398.33858pt x 208.84706pt.
+[3 <./picture/Blockade_Mech.png> <./picture/Z2_Z3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+[4 <./picture/successive_driving.png>]
+
+Package natbib Warning: Citation `Garey1976TheColoring' on page 5 undefined on 
+input line 142.
+
+
+Package natbib Warning: Citation `Karp1972ReducibilityProblems' on page 5 undef
+ined on input line 142.
+
+<picture/color_matching.png, id=49, 1711.39375pt x 906.38625pt>
+File: picture/color_matching.png Graphic file (type png)
+<use picture/color_matching.png>
+Package pdftex.def Info: picture/color_matching.png  used on input line 145.
+(pdftex.def)             Requested size: 241.84842pt x 128.08261pt.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+46.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+
+Underfull \hbox (badness 1038) in paragraph at lines 142--149
+\OT1/cmr/m/n/10 so-lu-tion is some-times called op-ti-mal graph col-or-ing
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 142--149
+\OT1/cmr/m/n/10 in which there ex-ists k-coloring where $\OML/cmm/m/it/10 k \OT
+1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^_\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 G\OT1/cmr/
+m/n/10 )$.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--149
+
+ []
+
+<picture/graph_mapping.png, id=50, 1882.03125pt x 1020.81375pt>
+File: picture/graph_mapping.png Graphic file (type png)
+<use picture/graph_mapping.png>
+Package pdftex.def Info: picture/graph_mapping.png  used on input line 154.
+(pdftex.def)             Requested size: 227.62204pt x 123.4581pt.
+<picture/opti_procedure.png, id=51, 1569.865pt x 574.145pt>
+File: picture/opti_procedure.png Graphic file (type png)
+<use picture/opti_procedure.png>
+Package pdftex.def Info: picture/opti_procedure.png  used on input line 163.
+(pdftex.def)             Requested size: 341.43306pt x 124.86676pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+[5 <./picture/color_matching.png> <./picture/graph_mapping.png>]
+<picture/GCP_5atom.png, id=57, 1924.18875pt x 1103.12125pt>
+File: picture/GCP_5atom.png Graphic file (type png)
+<use picture/GCP_5atom.png>
+Package pdftex.def Info: picture/GCP_5atom.png  used on input line 179.
+(pdftex.def)             Requested size: 369.88582pt x 212.05272pt.
+<picture/GCP_2D.png, id=58, 1332.98pt x 826.08624pt>
+File: picture/GCP_2D.png Graphic file (type png)
+<use picture/GCP_2D.png>
+Package pdftex.def Info: picture/GCP_2D.png  used on input line 187.
+(pdftex.def)             Requested size: 369.88582pt x 229.22273pt.
+ (./main.bbl
+[6]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1.
+
+[7 <./picture/opti_procedure.png> <./picture/GCP_5atom.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1.
 
 
 Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
 
-[3 <./picture/Blockade_Mech.png> <./picture/color_matching.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
+Underfull \hbox (badness 3009) in paragraph at lines 16--23
+ []\OT1/cmr/m/n/9 Alexander Keesling, Ahmed Om-ran, Harry Levine,
  []
 
+) [8 <./picture/GCP_2D.png>] [9]
 
-Overfull \hbox (1.64876pt too wide) in paragraph at lines 162--162
-[]|\OT1/cmr/m/n/9 ($[][]$)| 
- []
+LaTeX Warning: Reference `fig:case1_sequential_driving_2' on page 10 undefined 
+on input line 239.
 
-<picture/graph_mapping.png, id=44, 1882.03125pt x 1020.81375pt>
-File: picture/graph_mapping.png Graphic file (type png)
-<use picture/graph_mapping.png>
-Package pdftex.def Info: picture/graph_mapping.png  used on input line 180.
-(pdftex.def)             Requested size: 264.6107pt x 143.52042pt.
-[4] [5 <./picture/graph_mapping.png>]
-<picture/opti_procedure.png, id=54, 1569.865pt x 574.145pt>
-File: picture/opti_procedure.png Graphic file (type png)
-<use picture/opti_procedure.png>
-Package pdftex.def Info: picture/opti_procedure.png  used on input line 218.
-(pdftex.def)             Requested size: 369.88582pt x 135.27452pt.
-
-
-Class revtex4-2 Warning: Float cannot be placed.
-
-<picture/case1_ultimate.png, id=55, 1847.90375pt x 1093.08376pt>
-File: picture/case1_ultimate.png Graphic file (type png)
-<use picture/case1_ultimate.png>
-Package pdftex.def Info: picture/case1_ultimate.png  used on input line 229.
-(pdftex.def)             Requested size: 369.88582pt x 218.79634pt.
-[6]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 237.
-
-[7 <./picture/opti_procedure.png> <./picture/case1_ultimate.png>]
-No file main.bbl.
-[8]
-<picture/case1_QOconstraint2.png, id=69, 1866.975pt x 1005.7575pt>
+<picture/case1_QOconstraint2.png, id=76, 1866.975pt x 1005.7575pt>
 File: picture/case1_QOconstraint2.png Graphic file (type png)
 <use picture/case1_QOconstraint2.png>
-Package pdftex.def Info: picture/case1_QOconstraint2.png  used on input line 25
-4.
+Package pdftex.def Info: picture/case1_QOconstraint2.png  used on input line 24
+2.
 (pdftex.def)             Requested size: 398.33858pt x 214.57622pt.
-<picture/case1_QOconstraint3.png, id=70, 1844.8925pt x 1013.7875pt>
-File: picture/case1_QOconstraint3.png Graphic file (type png)
-<use picture/case1_QOconstraint3.png>
-Package pdftex.def Info: picture/case1_QOconstraint3.png  used on input line 26
-1.
-(pdftex.def)             Requested size: 398.33858pt x 218.88821pt.
-<picture/case1_QOconstraint1.png, id=71, 1729.46124pt x 963.6pt>
-File: picture/case1_QOconstraint1.png Graphic file (type png)
-<use picture/case1_QOconstraint1.png>
-Package pdftex.def Info: picture/case1_QOconstraint1.png  used on input line 26
-7.
-(pdftex.def)             Requested size: 241.84842pt x 134.74133pt.
- [9 <./picture/case1_QOconstraint2.png>]
-<picture/case23_groundstate_barplot.png, id=76, 953.06062pt x 800.49063pt>
-File: picture/case23_groundstate_barplot.png Graphic file (type png)
-<use picture/case23_groundstate_barplot.png>
-Package pdftex.def Info: picture/case23_groundstate_barplot.png  used on input 
-line 280.
-(pdftex.def)             Requested size: 241.84842pt x 203.12692pt.
-<picture/case2_QOconstraint1.png, id=77, 1883.035pt x 1078.0275pt>
-File: picture/case2_QOconstraint1.png Graphic file (type png)
-<use picture/case2_QOconstraint1.png>
-Package pdftex.def Info: picture/case2_QOconstraint1.png  used on input line 28
-8.
-(pdftex.def)             Requested size: 426.79134pt x 244.3387pt.
-<picture/case3_QOconstraint1.png, id=78, 1859.94875pt x 1049.9225pt>
-File: picture/case3_QOconstraint1.png Graphic file (type png)
-<use picture/case3_QOconstraint1.png>
-Package pdftex.def Info: picture/case3_QOconstraint1.png  used on input line 29
-6.
-(pdftex.def)             Requested size: 398.33858pt x 224.84781pt.
 
+LaTeX Warning: Reference `fig:case1_sequential_driving_2' on page 10 undefined 
+on input line 246.
+
+[10 <./picture/case1_QOconstraint2.png>]
+
+LaTeX Warning: Reference `fig:case23_ground_barplot' on page 11 undefined on in
+put line 255.
+
+<picture/2D_array_coloring.png, id=82, 1674.255pt x 801.99625pt>
+File: picture/2D_array_coloring.png Graphic file (type png)
+<use picture/2D_array_coloring.png>
+Package pdftex.def Info: picture/2D_array_coloring.png  used on input line 264.
+
+(pdftex.def)             Requested size: 426.79134pt x 204.43903pt.
+<picture/GCP_6atom.png, id=83, 1738.495pt x 1085.05376pt>
+File: picture/GCP_6atom.png Graphic file (type png)
+<use picture/GCP_6atom.png>
+Package pdftex.def Info: picture/GCP_6atom.png  used on input line 272.
+(pdftex.def)             Requested size: 398.33858pt x 248.61339pt.
 
 Package natbib Warning: There were undefined citations.
 
-[10 <./picture/case1_QOconstraint3.png> <./picture/case1_QOconstraint1.png>]
-[11 <./picture/case23_groundstate_barplot.png> <./picture/case2_QOconstraint1.p
-ng>] [12 <./picture/case3_QOconstraint1.png>] (./main.aux) ) 
+[11 <./picture/2D_array_coloring.png>] [12 <./picture/GCP_6atom.png>]
+(./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18009 strings out of 478994
- 348502 string characters out of 5858184
- 676793 words of memory out of 5000000
- 35162 multiletter control sequences out of 15000+600000
+ 18049 strings out of 478994
+ 349030 string characters out of 5858185
+ 675834 words of memory out of 5000000
+ 35196 multiletter control sequences out of 15000+600000
  415177 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,14n,88p,4933b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-d
-ist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (12 pages, 6217225 bytes).
+ 86i,11n,88p,4933b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (12 pages, 4671672 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 168 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

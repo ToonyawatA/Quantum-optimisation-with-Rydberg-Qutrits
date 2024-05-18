@@ -208,35 +208,7 @@ The optimization protocols developed in this work can be understood more clearly
 
 \section{Graph: Basic definitions }\label{appendix:graph-definition}
 
-
-\section{Maximum k-color matching and Minimum k-color perfect matching} \label{Max-Min-kcm}
-
-\emph{Maximum k-color matching {\rm (Max-kCM)}.} ---  The alternative way to solve the graph coloring problem, we propose a new class of optimization problems similar to MIS, which is called \emph{maximum k-color matching} (Max-kCM) problem. Firstly, we define the k-color mapping, k-color matching, and maximum k-color matching (Max-kCM) problem as following 
-
-\begin{definition}
-\label{def:k-color-matching}
-{\rm (k-color matching)}
-For a given graph $G=(V,E)$, the k-color matching is a subset $U \subset E$, such that for all $u=(v_i,v_j) \in {U}$, $f_k(v_i) \neq f_k(v_j)$, where $v_i,v_j \in V$ and $f_k$ is a k-color mapping defined in {\rm Definition.\ref{def:k-color}}. The k-color matching $U$ is said to be {\rm\textbf{perfect}} if and only if $U=E$.
-\end{definition}
-\begin{definition}
-\label{def:maximum-k-color-matching-problem}
-{\rm (Maximum k-color matching problem)} For a given graph $G=(V,E)$, and a set of k colors $\mathbb{C}_k$ with a color mapping $f_k$, the task is to maximize $|U|$, where $U$ is k-color matching, and $|U|$ is the size of $U$, i.e., the number of elements in it. A maximum k-color matching is $U$ where $|U|$ is maximized. Any {\rm \textbf{perfect}} k-color matching is always maximum k-color matching. The optimization task can be written as
-\begin{align}\label{eq-max-kcm}
-\text{\rm Maximize} \hspace{5mm} &|U|  \nonumber \\
-\text{\rm s.t.} \hspace{5mm} &|\mathbb{C}_k| \hspace{3mm} \text{\rm is fixed}   
-\end{align}
-\end{definition}
-We see that the Max-kCM is actually to find the largest subset of matching $U$ under an occupation constraint of k colors, as can be seen in Fig.\ref{fig:graph_coloring}). In other words, we try to color as many vertices as possible such that a maximum number of connected pairs of two vertices with different colors is reached, assuming that there are only k colors available. Generally speaking, the number of matching, i.e., connected pairs of vertices with two different colors, are always can be maximized if there are infinite number of colors. This maximization can easily reach to the point at which the matching is perfect. However, such scenarios are trivial and we are interested only in the cases in which a finite, or even small, number of colors are available.\\
-
-\emph{Minimum k-color perfect matching {\rm (Min-kCPM)}.}---  The above situation changes when we now consider the solution to Max-kCM in the limit of an infinite number of colors ($k \to \infty$), which normally is perfect matching, and try to repeat as many colors as possible, i.e., reducing $k$,  such that the matching remain perfect. The minimum $k_{\rm min}$ is reached when maximum $(k_{\rm min}-1)$-color matching is no longer perfect. The difference between Max-kCM and Min-kcPM can be seen in Fig.\ref{fig:graph_coloring}(b) and Fig.\ref{fig:graph_coloring}(C).
-\begin{definition}
-\label{def:minimum-k-color-perfect-matching-problem}
-{\rm (Minimum k-color perfect matching problem)} For a given graph $G=(V,E)$, and a perfect k-color matching $U$, assuming that the number of colors k is sufficiently large, the task is to minimize $|\mathbb{C}_k| = k$, subjected to the condition that the color matching $U$ remains perfect. The $k_{\rm min}$ is reached when maximum $(k_{\rm min}-1)$-color matching is no longer {\rm \textbf{perfect}}. The number $k_{\rm min}$ is called {\rm \textbf{chromatic number}} of graph $G$, defined as $\chi(G)$. The optimization task can be wriiten as 
-\begin{align}\label{eq-min-kcpm}
-\text{\rm Minimize} \hspace{5mm} &|\mathbb{C}_k|  \nonumber \\
-\text{\rm s.t.} \hspace{5mm} &U \hspace{3mm} \text{\rm is perfect}
-\end{align}
-\end{definition}
+An \emph{undirected graph} is a triple ($V,E,$)
 
 \section{Quantum annealing algorithm (QAA)}
 

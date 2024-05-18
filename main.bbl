@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{Saffman2010QuantumAtoms}
+M.~Saffman, T.~G. Walker, and K.~M{\o}lmer.
+\newblock {Quantum information with Rydberg atoms}.
+\newblock {\em Reviews of Modern Physics}, 82(3):2313--2363, 8 2010.
+
+\bibitem{Bernien2017ProbingSimulator}
+Hannes Bernien, Sylvain Schwartz, Alexander Keesling, Harry Levine, Ahmed
+  Omran, Hannes Pichler, Soonwon Choi, Alexander~S. Zibrov, Manuel Endres,
+  Markus Greiner, Vladan Vuletic, and Mikhail~D. Lukin.
+\newblock {Probing many-body dynamics on a 51-atom quantum simulator}.
+\newblock {\em Nature}, 551(7682):579--584, 11 2017.
+
+\bibitem{Keesling2019QuantumSimulator}
+Alexander Keesling, Ahmed Omran, Harry Levine, Hannes Bernien, Hannes Pichler,
+  Soonwon Choi, Rhine Samajdar, Sylvain Schwartz, Pietro Silvi, Subir Sachdev,
+  Peter Zoller, Manuel Endres, Markus Greiner, Vladan Vuleti{\'{c}}, and
+  Mikhail~D. Lukin.
+\newblock {Quantum Kibble–Zurek mechanism and critical dynamics on a
+  programmable Rydberg simulator}.
+\newblock {\em Nature}, 568(7751):207--211, 4 2019.
+
+\bibitem{Browaeys2020Many-bodyAtoms}
+Antoine Browaeys and Thierry Lahaye.
+\newblock {Many-body physics with individually controlled Rydberg atoms}.
+\newblock {\em Nature Physics 2020 16:2}, 16(2):132--142, 1 2020.
+
+\end{thebibliography}

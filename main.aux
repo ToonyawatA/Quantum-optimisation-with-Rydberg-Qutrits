@@ -4,7 +4,7 @@
 \citation{Saffman2010QuantumAtoms}
 \citation{Saffman2010QuantumAtoms,Browaeys2020Many-bodyAtoms}
 \newlabel{FirstPage}{{}{1}{}{}{}}
-\@writefile{toc}{\contentsline {title}{Quantum Optimization for Graph Coloring Problem Using Rydberg-Qutrit Arrays}{1}{}}
+\@writefile{toc}{\contentsline {title}{Quantum Optimization for Graph Coloring Problem Using Rydberg-Qutrit Arrays with Successive Local Driving Technique}{1}{}}
 \@writefile{toc}{\contentsline {abstract}{Abstract}{1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Theoretical background}{1}{}}
@@ -12,49 +12,61 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Array of interacting Rydberg-atom qutrits}. The system of 1D chain of Rydberg-atom qutrits in which atomic ground states $\mathinner {|{g}\rangle }$ are coherently coupled to the Rydberg states $\mathinner {|{r_1}\rangle }$ and $\mathinner {|{r_2}\rangle }$ by the Rabi frequencies $\Omega _1$ (green laser), $\Omega _2$ (orange laser) and the detunings $\Delta _1$ and $\Delta _2$, respectively. There are 3 types of van de Waals interactions as in following scenarios: 1.) energy shift $\propto C^{(1)}_6$ when neighbouring atoms are both excited to $\mathinner {|{r_1}\rangle }$ (green circle). 2.) energy shift $\propto C^{(2)}_6$ when neighbouring atoms are both excited to $\mathinner {|{r_2}\rangle }$ (orange circle). 3.) energy shift $\propto C^{(12)}_6$ when neighbouring atoms are excited to $\mathinner {|{r_1}\rangle }$ and $\mathinner {|{r_2}\rangle }$ (purple arrow). Since the Rydberg states $\mathinner {|{r_1}\rangle }$ and $\mathinner {|{r_2}\rangle }$ are chosen to have the same parity which leads to zero dipole matrix element, resulting in the suppression of resonant dipole interaction $C^{(12)}_3 = 0$. }}{2}{}}
 \newlabel{fig:many-qutrit}{{1}{2}{}{}{}}
 \newlabel{eq:H_ryd}{{1}{2}{}{}{}}
+\citation{Bernien2017ProbingSimulator}
+\citation{Hikihara2011ConnectingDeformation}
+\citation{Bernien2017ProbingSimulator}
+\citation{Bernien2017ProbingSimulator}
+\citation{Bernien2017ProbingSimulator}
+\citation{Bernien2017ProbingSimulator}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {The blockade mechanism between same Rydberg states.} (a) The $C^{(1)}_6$ interaction prevents neighbouring atoms within (green) radius $R^{(1)}_b = \sqrt  [6]{|C^{(1)}_6|/\Omega }$ from being excited to same Rydberg state $\mathinner {|{r_1}\rangle }$. (b) The $C^{(2)}_6$ interaction prevents neighbouring atoms within (orange) radius $R^{(2)}_b = \sqrt  [6]{|C^{(2)}_6|/\Omega }$ from being excited to same Rydberg state $\mathinner {|{r_2}\rangle }$. (c) The $C^{(12)}_6$ interaction prevents neighbouring atoms within (purple) radius $R^{(12)}_b = \sqrt  [6]{|C^{(12)}_6|/\Omega }$ from being excited to different Rydberg state. In other words, the two green circles can never be seen together within green radius, similarly for two orange circles within orange radius. In contrast, two circles with different color can never be seen together within purple radius.}}{3}{}}
 \newlabel{fig:blockade}{{2}{3}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B}Graph coloring problem (GCP)}{3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Maximum k-color matching problem (Max-kCM), Minimum k-color perfect matching (Min-kCPM), and Graph coloring problem (GCP).} (a) The solution to maximum 2-color matching problem, where the matching $U = \{(1,2),(1,3),(2,4),(3,4),(4,5)\}$, which are those edges denoted by thick black line, and $|U|_{\text  {\rm  max}}=5$. In this case, $U$ is not \emph  {perfect} as $U \subset E$. (b) The solution to maximum 3-color matching problem, where $U$ is \emph  {perfect} as it includes every edge $E$ of the graph $G=(V,E)$, i.e., $U = E$ and $|U|_{\text  {\rm  max}}=7$. (c) The solution to maximum 4-color matching problem, where $U$ is also \emph  {perfect} as it includes every edge $E$ of the graph $G=(V,E)$. However, if the constraint that the color matching is \emph  {perfect} is imposed on this graph, and the task is to find the least number of colors $k_{\rm  min}$ such that the color matching is still perfect. The problem is then transformed to the minimum k-color perfect matching problem (Min-kCPM). Though solution from (c) is also perfect matching, yet the solution from (b) is the only solution to both Max-kCM and Min-kCPM, which especially makes them a solution to the so-called \emph  {graph coloring problem} (GCP). The minimum k can be solved as $k_{\text  {\rm  min}} = 3$, which is so-called \emph  {chromatic number} $\chi (G)$ of the graph. While the solution from (c) is the solution to \emph  {relaxed graph coloring problem} where the number of colors here is 4 which is greater than chromatic number $\chi (G)$.}}{3}{}}
-\newlabel{fig:color-matching}{{3}{3}{}{}{}}
-\newlabel{def:k-color}{{1}{3}{}{}{}}
-\newlabel{def:k-color-matching}{{2}{3}{}{}{}}
-\newlabel{def:maximum-k-color-matching-problem}{{3}{3}{}{}{}}
-\newlabel{eq-max-kcm}{{2}{4}{}{}{}}
-\newlabel{def:minimum-k-color-perfect-matching-problem}{{4}{4}{}{}{}}
-\newlabel{eq-min-kcpm}{{3}{4}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces \textbf  {The classification of coloring problems by the characteristics of the matchings.} The table characterizes each problem with different number of colors $k$. For a given graph $G=(V,E)$. For all range of $k$, one can always find the solution to Max-kCM. The matching $U$ turns out to be not perfect only if $k<\chi (G)$, otherwise it is perfect. When $k\geq \chi (G)$, the Min-kCPM is performed by solving Max-kCM at every reducing $k$ until we found $k_{\rm  min}$ such that the matching is no longer perfect if $k<k_{\rm  min}$ (the one denoted with * is the solution to Min-kcPM). In the context of graph coloring problems (GCP), the chromatic number of graph has been solved by such procedures as $\chi (G) = k_{\rm  min}$, and a set of all the vertices covered in $U$ is the solution to GCP. However, sometimes it is too hard to find $\chi (G)$, the GCP is then reduced to relaxed GCP, where $k>\chi (G)$, which is easier to be solved by solving Max-kCM at such $k$.}}{4}{}}
-\newlabel{table:color-problem}{{I}{4}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {C}Mapping problem graph onto Rydberg-qutrit interaction graph}{4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Mapping problem graph to Rydberg-qutrit interaction graph.} The left panel shows random UDGs needed to be solved, consisting of vertices connected by edge (solid line). The right panel show the Rydberg-qutrit array with all interactions between atoms (dash line). (a) $a = 0.8R^{(1)}_b$, (b) $a=0.4R^{(1)}_b$. When each atom come closer to each other as in (b) the blockade range is extended beyond the nearest atom and reach the next nearest atom. which make atom $i$ also connect to atom $i+2$ not just only atom $i+1$ as shown in (a). The green circles represent the blockade radius generating from atom 2, 3, and 4 respectively.}}{5}{}}
-\newlabel{fig:graph_mapping}{{4}{5}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {D}Quantum annealing algorithm (QAA)}{5}{}}
-\newlabel{eq:H_p}{{4}{5}{}{}{}}
-\newlabel{eq:H_Ryd_t}{{5}{5}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {III}Results}{6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A}Detuning sweeping in order}{6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B}Local addressing techniques}{6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Conclusion}{6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Detuning sweeping in order}. The diagram shows the procedures along each sequential detuning sweeping. The first sequential sweeping (above procedure) is to encode the associated constraint of the annealing state being in $\mathcal  {S}_1$ by first sweeping $\Delta _1(t)$ to drive the annealing state into subspace $\mathcal  {S}_1$, and then carry on the optimization by sweeping $\Delta _2(t)$ to drive the final state to be the solution to the optimization under constraint $\mathcal  {S}_1$. Vice versa for the second sequential sweeping (below procedure).}}{7}{}}
-\newlabel{fig:opt_procedure}{{5}{7}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Detuning sweeping in order and local addressing}. (a) The solution to the graph coloring problem shown in Fig.3{}{}{}\hbox {}(b) (left) and how to interpret the solution from Rydberg configuration in Rydberg-qutrit array (right) (b) }}{7}{}}
-\newlabel{fig:case1_ultimate}{{6}{7}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Rydberg crystals in system with OBC.} The ground state of system governed by Rydberg Hamiltonian in \cite  {Bernien2017ProbingSimulator}, where $\mathbb  {Z}_2$ and $\mathbb  {Z}_3$ Rydberg crystals are formed when $a = 0.7R_b$ and $a = 0.4R_b$, respectively. (a) Both $\mathbb  {Z}_2$ and $\mathbb  {Z}_3$ Rydberg crystals are jeopardized in system with $N=6$, where the number of atoms is incommensurate with OBC. (b) The formation of $\mathbb  {Z}_2$ and $\mathbb  {Z}_3$ Rydberg crystals are intact in system with $N=7$, where this number of atoms is commensurate with OBC. }}{3}{}}
+\newlabel{fig:Z2-Z3}{{3}{3}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Successive local driving technique.} 1D Rydberg array with OBC for $N=6$ atoms are governed by the Rydberg Hamiltonian defined in \cite  {Bernien2017ProbingSimulator}. To allow the $\mathbb  {Z}_2$ crystal to form, we set lattice spacing $a = 0.7R_b$, where $R_b$ is blockade radius $R_b = (C_6/\Omega )^{1/6}$. Here, we choose the Rydberg state of Caesium (Cs) atom $80S1/2$ with $C_6 = 3199$ GHz $\mu m^6$, Rabi frequency $\Omega = 3 \times 2\pi \textit  {\rm  MHz}$, and detuning $\Delta = 10 \times 2\pi \textit  {\rm  MHz}$, which make $R_b=7.4 \hspace  {1mm} \mu m$. We consider 2 cases when (a) Globally apply driving fields $\Omega (t)$ along with adiabatic sweepings of $\Delta (t)$ to all atoms at the same time, and (b) Locally applying driving fields $\Omega (t)$ along with adiabatic sweepings of $\Delta (t)$ in succession. The $\mathbb  {Z}_2$ Rydberg crystal is jeopardized in (a) by the finite size effect with open boundary condition. However, to remedy this $\mathbb  {Z}_2$ discrete spatial symmetry, one can perform successive local driving protocol as shown in (b) to ensure the formation of $\mathbb  {Z}_2$ Rydberg crystal.}}{4}{}}
+\newlabel{fig:successinve_driving}{{4}{4}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}Graph coloring problem on unit disk graph (GCP-UD)}{4}{}}
+\citation{Garey1976TheColoring}
+\citation{Karp1972ReducibilityProblems}
+\newlabel{def:k-coloring}{{1}{5}{}{}{}}
+\newlabel{def:k-color}{{2}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {The examples of graph coloring.} (a) Invalid graph coloring as there are adjacent vertices , i.e., \{(2,3),(3,5)\}, that share the same color. (b) The graph coloring is valid in the sense that all adjacent vertices are assigned with different colors. Besides, it is an optimal as one can never found the coloring of this graph with the number of colors less than 3. The \emph  {chromatic number} of this graph is therefore equal to 3. i.e., $\chi (G)=3$. (c) The graph coloring is valid but not optimal as the number of colors used is 4, which is greater than the chromatic number. Sometimes is said to be relaxed graph coloring.}}{5}{}}
+\newlabel{fig:graph_coloring}{{5}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Mapping problem graph to Rydberg-qutrit interaction graph.} The left panel shows random UDGs from problem graphs, consisting of vertices connected by edge (solid line). The right panel show the Rydberg-qutrit array with all interactions between atoms (dash line). (a) $a = 0.8R^{(1)}_b$, (b) $a=0.4R^{(1)}_b$. When each atom come closer to each other as in (b) the blockade range is extended beyond the nearest atom and reach the next nearest atom. which make atom $i$ also connect to atom $i+2$ not just only atom $i+1$ as shown in (a). The green circles represent the blockade radius generating from atom 2, 3, and 4, respectively.}}{5}{}}
+\newlabel{fig:graph_mapping}{{6}{5}{}{}{}}
 \bibdata{mainNotes,references}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}Two detuning sweeping in time order}{6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Results}{6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}1D-array}{6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}2D-array}{6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Conclusion}{6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Detuning sweeping in order}. The diagram shows the procedures along each sequential detuning sweeping. The first sequential sweeping (above procedure) is to encode the associated constraint of the annealing state being in $\mathcal  {S}_1$ by first sweeping $\Delta _1(t)$ to drive the annealing state into subspace $\mathcal  {S}_1$, and then carry on the optimization by sweeping $\Delta _2(t)$ to drive the final state to be the solution to the optimization under constraint $\mathcal  {S}_1$. Vice versa for the second sequential sweeping (below procedure).}}{7}{}}
+\newlabel{fig:opt_procedure}{{7}{7}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {GCP 5 atoms} }}{7}{}}
+\newlabel{fig:case1_ultimate}{{8}{7}{}{}{}}
+\bibcite{Saffman2010QuantumAtoms}{{1}{}{{}}{{}}}
+\bibcite{Bernien2017ProbingSimulator}{{2}{}{{}}{{}}}
+\bibcite{Keesling2019QuantumSimulator}{{3}{}{{}}{{}}}
+\bibcite{Browaeys2020Many-bodyAtoms}{{4}{}{{}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {GCP in 2D array} }}{8}{}}
+\newlabel{fig:case1_ultimate}{{9}{8}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}References}{8}{}}
+\newlabel{LastBibItem}{{4}{8}{}{}{}}
 \@writefile{toc}{\appendix }
-\@writefile{toc}{\contentsline {section}{\numberline {A}Quantum optimization for graph coloring problems in 1D graph}{9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1}$R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:1:0.5$, {\rm  and} $a=0.8R^{(1)}_b$.}{9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {$R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:1:0.5$, and $a = 0.8R^{(1)}_b$}. The first graph of each figure shows the time-varying detunings $\Delta _1(t)$, $\Delta _2(t)$ (being swept in order), and Rabi frequencies $\Omega _1(t)$ (green shaded area), and $\Omega _2(t)$ (orange shaded area), the second graph shows the fidelity in the Rydberg state $\mathinner {|{r_1}\rangle }$ denoted by green vertex, and the third graph shows the fidelity in the Rydberg state $\mathinner {|{r_2}\rangle }$ denoted by orange vertex. The first sweeping is to encode associated constraints into the annealing state, called "constrained states". The second sweeping is to anneal the constrained states to a solution state in which the cost function is minimized under the constraint imposed by the first sweeping. (a) Optimization with constraint that the solution is lied in the $\mathcal  {S}_1$ region. (b) Optimization with constraint that the solution is lied in the $\mathcal  {S}_2$ region.}}{9}{}}
-\newlabel{fig:case1_sequential_driving_1}{{7}{9}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2}$R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:2:0.5$, {\rm  and} $a=0.8R^{(1)}_b$.}{9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Graph: Basic definitions }{9}{}}
+\newlabel{appendix:graph-definition}{{A}{9}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Quantum annealing algorithm (QAA)}{9}{}}
+\newlabel{eq:H_p}{{B1}{9}{}{}{}}
+\newlabel{eq:H_Ryd_t}{{B2}{9}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Quantum optimization for graph coloring problems in 1D graph}{10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1}$R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:1:0.5$, {\rm  and} $a=0.8R^{(1)}_b$.}{10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {$R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:1:0.5$, and $a = 0.8R^{(1)}_b$}. The first graph of each figure shows the time-varying detunings $\Delta _1(t)$, $\Delta _2(t)$ (being swept in order), and Rabi frequencies $\Omega _1(t)$ (green shaded area), and $\Omega _2(t)$ (orange shaded area), the second graph shows the fidelity in the Rydberg state $\mathinner {|{r_1}\rangle }$ denoted by green vertex, and the third graph shows the fidelity in the Rydberg state $\mathinner {|{r_2}\rangle }$ denoted by orange vertex. The first sweeping is to encode associated constraints into the annealing state, called "constrained states". The second sweeping is to anneal the constrained states to a solution state in which the cost function is minimized under the constraint imposed by the first sweeping. (a) Optimization with constraint that the solution is lied in the $\mathcal  {S}_1$ region. (b) Optimization with constraint that the solution is lied in the $\mathcal  {S}_2$ region.}}{10}{}}
+\newlabel{fig:case1_sequential_driving_1}{{10}{10}{}{}{}}
 \bibstyle{unsrt}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {$R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:1:0.5$, and $a = 0.4R^{(1)}_b$}. The first graph of each figure shows the time-varying detunings $\Delta _1(t)$, $\Delta _2(t)$ (being swept in order), and Rabi frequencies $\Omega _1(t)$ (green shaded area), and $\Omega _2(t)$ (orange shaded area), the second graph shows the fidelity in the Rydberg state $\mathinner {|{r_1}\rangle }$ denoted by green vertex, and the third graph shows the fidelity in the Rydberg state $\mathinner {|{r_2}\rangle }$ denoted by orange vertex. (a) Optimization with constraint that the solution is lied in the $\mathcal  {S}_1$ region. (b) Optimization with constraint that the solution is lied in the $\mathcal  {S}_2$ region.}}{10}{}}
-\newlabel{fig:case1_sequential_driving_2}{{8}{10}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {The ground state as the solution to optimization with no constraint}}}{10}{}}
-\newlabel{fig:case1_same_driving}{{9}{10}{}{}{}}
-\newlabel{subspace_case1}{{A1}{10}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {Configuration of Rydberg excitations in lower energy subspaces.} The configuration of ground and first excited state by extracting the lowest and second lowest energy eigenstates from the Hamiltonian $H_{\text  {\rm  Ryd}}$ in eq.(1{}{}{}\hbox {}), respectively. The fidelities of atoms $i$ being in $\mathinner {|{r_1}\rangle }$ and $\mathinner {|{r_2}\rangle }$ in ground and first excited states are calculated by $\textit  {\rm  Tr}(\rho _i n_1)$, and $\textit  {\rm  Tr}(\rho _i n_2)$, where $\rho _i$ is reduced density matrix for the atom $i$ in each ground and excited states, respectively. (a) for the case of $R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:2:0.5$, and $a=0.8R^{(1)}_b$. (b) For the case of $R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=2:1:0.5$, and $a=0.8R^{(1)}_b$.}}{11}{}}
-\newlabel{fig:case23_ground_barplot}{{10}{11}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textit  {Optimization with constraints}}}{11}{}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{toc}{\contentsline {subsection}{\numberline {2}$R^{(1)}_b:R^{(2)}_b:R^{(12)}_b=1:2:0.5$, {\rm  and} $a=0.8R^{(1)}_b$.}{11}{}}
+\newlabel{subspace_case1}{{C1}{11}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Extended data}{11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textit  {@D array chromatic number}}}{11}{}}
 \newlabel{fig:case2_opt}{{11}{11}{}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \textit  {Optimization with constraints}}}{12}{}}
 \newlabel{fig:case3_opt}{{12}{12}{}{}{}}
